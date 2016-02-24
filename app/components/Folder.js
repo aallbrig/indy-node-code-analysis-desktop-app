@@ -62,10 +62,9 @@ export default class Home extends Component {
           <Col xs={3}>
             { /* sidebar */ }
             <h3>Analysis</h3>
-            <p>There are {this.state.filePaths.length} git repositories</p>
             {this.state.loading ?
             <Glyphicon glyph="refresh" className={styles.glyphiconRefreshAnimate} />
-            : null
+            : <p>There are {this.state.filePaths.length} git repositories</p>
             }
           </Col>
           <Col xs={9}>
