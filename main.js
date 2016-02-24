@@ -15,7 +15,7 @@ let mainWindow = null;
 crashReporter.start();
 
 if (process.env.NODE_ENV === 'development') {
-  require('electron-debug')();
+  // require('electron-debug')();
 }
 
 

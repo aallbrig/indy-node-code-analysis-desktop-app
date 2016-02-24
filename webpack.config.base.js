@@ -5,14 +5,16 @@ const path = require('path');
 
 module.exports = {
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      loaders: ['babel-loader'],
-      exclude: /node_modules/
-    }, {
-      test: /\.json$/,
-      loader: 'json-loader'
-    }]
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel-loader'],
+        exclude: /node_modules/
+      }, {
+        test: /\.json$/,
+        loader: 'json-loader'
+      }
+    ]
   },
   output: {
     path: path.join(__dirname, 'dist'),
